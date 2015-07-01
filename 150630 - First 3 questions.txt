@@ -1,0 +1,10 @@
+#. Introductions
+
+1. Why are you interested in Data Science?
+Because, I'm majoring statistics since I'm interested in collaboration between business and decision making based on data.
+
+2. What is Data Science?
+Relevance to my previous answer, I think Data Science is wisdom that came from data analysis for rational choice.
+
+3. Experience?
+I have experience studied box-office about korean pop song with association and ANOVA analysis.
