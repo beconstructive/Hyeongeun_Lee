@@ -16,7 +16,7 @@ P <- read.csv(file.choose())
 
 ## (1) Compare the precipitation from 1999 to 2005. Are they different?
 
-# extract 1999 and 2005 year.
+# extract 1999 and 2005 and log transform.
 P_1999 <- log10(P[P$Year==1999,]$Value)
 P_2005 <- log10(P[P$Year==2005,]$Value)
 
@@ -32,9 +32,9 @@ t.test(P_1999, P_2005)
 
 ## (2) Precipitation for all countries over time.
 
-# calculate means by each Years.
+# calculate means by each years.
 means <- tapply(P$Value,P$Year,mean)
 
-# draw plot and trend line.
+# draw plot & trend.
 plot(x=levels(factor(P$Year)), y=means, xlab='Year', ylab='Precipitation for all countries')
 abline(lm(Value ~ Year, data=P))
