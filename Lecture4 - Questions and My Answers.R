@@ -22,8 +22,8 @@ P_2005 <- log10(P[P$Year==2005,]$Value)
 
 # draw histograms.
 par(mfrow=c(1,2))
-hist(P_1999), main='Histogram of 1999', xlab='Log-transformed Precipitation')
-hist(P_2005), main='Histogram of 2005', xlab='Log-transformed Precipitation')
+hist(P_1999, main='Histogram of 1999', xlab='Log-transformed Precipitation')
+hist(P_2005, main='Histogram of 2005', xlab='Log-transformed Precipitation')
 
 # t-test for difference in means.
 t.test(P_1999, P_2005)
