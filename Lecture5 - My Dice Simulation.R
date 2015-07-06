@@ -35,5 +35,24 @@ trials_100    <- myfun_2dices(100)
 trials_10000  <- myfun_2dices(10000)
 
 # draw cummulative dist. plot
+par(mfrow=c(1,1))
 plot.ecdf(trials_10000)
 
+
+
+
+
+#############################################################
+
+
+
+
+
+# draw normal dist. histogram
+# 얻은 자료의 분포하고 비교하기 위해!
+hist(rnorm(n=10000, mean=0, sd=1), freq=F)
+
+# find percential of your height.
+# pop. mean : 70 inch /// pop. sd : 5 inch
+# my height : 67inch
+pnorm(67, mean=70, sd=5)
