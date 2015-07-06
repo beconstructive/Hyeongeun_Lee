@@ -33,3 +33,7 @@ par(mfrow=c(1,3))
 trials_10     <- myfun_2dices(10)
 trials_100    <- myfun_2dices(100)
 trials_10000  <- myfun_2dices(10000)
+
+# draw cummulative dist. plot
+plot.ecdf(trials_10000)
+
