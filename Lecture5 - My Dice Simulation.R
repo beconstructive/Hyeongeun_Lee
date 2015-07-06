@@ -7,7 +7,7 @@
 # 알 수 있는 점은?
 
 # create user define function for simuation.
-myfun <- function(trials){
+myfun_2dices <- function(trials){
   
   # create obj. to save # of trials
   result = numeric(trials)
@@ -30,6 +30,6 @@ myfun <- function(trials){
 # draw histograms in 1 window
 par(mfrow=c(1,3))
 
-trials_10     <- myfun(10)
-trials_100    <- myfun(100)
-trials_10000  <- myfun(10000)
+trials_10     <- myfun_2dices(10)
+trials_100    <- myfun_2dices(100)
+trials_10000  <- myfun_2dices(10000)
